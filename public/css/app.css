@@ -10019,3 +10019,6 @@ h3 {
     border-color: #dee2e6;
   }
 }
+img {
+  border: solid 1px #777777;
+}

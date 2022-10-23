@@ -24,22 +24,22 @@
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="name">名前</label>
+                            <label for="name">名前(必須)</label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="名前" value="{{ old('name') }}">
                         </div>
 
                         <div class="form-group">
-                            <label for="kana_name">フリガナ</label>
+                            <label for="kana_name">フリガナ(必須)</label>
                             <input type="text" class="form-control" id="kana_name" name="kana_name"  placeholder="名前を全角カタカナ入力して下さい" value="{{ old('kana_name')}}">
                         </div>
 
                         <div class="form-group">
-                            <label for="quantity">個数</label>
+                            <label for="quantity">個数(必須)</label>
                             <input type="text" class="form-control" id="quantity" name="quantity" placeholder="1,2,3..." value="{{ old('quantity')}}">
                         </div>
 
                         <div class="form-group">
-                            <label for="type">種別</label>
+                            <label for="type">種別(必須)</label>
                             <select class="form-control" id="type" name="type">
                             <option value="">選択してください</option>
                                 <option value="1">文房具</option>

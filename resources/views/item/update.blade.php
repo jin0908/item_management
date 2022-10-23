@@ -26,22 +26,22 @@
                     <div class="card-body">
                     <input type="hidden" value="{{ $item->id }}" name="id">
                         <div class="form-group">
-                            <label for="name">名前</label>
+                            <label for="name">名前(必須)</label>
                             <input type="text" class="form-control" id="name" name="name" value="{{ $item->name }}">
                         </div>
 
                         <div class="form-group">
-                            <label for="kana_name">フリガナ</label>
+                            <label for="kana_name">フリガナ(必須)</label>
                             <input type="text" class="form-control" id="kana_name" name="kana_name"  value="{{ $item->kana_name }}">
                         </div>
 
                         <div class="form-group">
-                            <label for="quantity">個数</label>
+                            <label for="quantity">個数(必須)</label>
                             <input type="text" class="form-control" id="quantity" name="quantity" value="{{ $item->quantity }}">
                         </div>
 
                         <div class="form-group">
-                            <label for="type">種別</label>
+                            <label for="type">種別(必須)</label>
                             <select class="form-control" id="type" name="type">
                                 @foreach (config('type') as $key =>$value )
                                     <option value="{{ $key }}" @if($item->type ==  $key) selected @endif>{{ $value }}</option>
